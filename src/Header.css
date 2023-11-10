@@ -2,10 +2,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: #082D00;
-
-
-
+    background-color: rgb(188, 188, 188);
 }
 
 .header__logo{
@@ -33,7 +30,7 @@
 
 .header__searchIcon{
     padding: 5px;
-    background-color: #F0F1CB;
+    background-color: rgb(132, 132, 132);
     border-radius: 20px;
     margin-left:  5px;
 
@@ -72,7 +69,7 @@
 .header__optionBasket{
     margin-left:  5px;
     margin-right: 5px;
-    background-color: darkgreen;
+    background-color: rgb(132, 132, 132);
     border-radius: 20px;
     padding: 5px;
 }

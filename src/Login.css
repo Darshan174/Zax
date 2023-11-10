@@ -1,0 +1,27 @@
+.login {
+    background-color: rgb(178, 177, 177);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+.login__logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    width: 100px;
+    border-radius: 50px;
+
+}
+
+.login__container{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    background-color: rgb(143, 143, 143);;
+}
