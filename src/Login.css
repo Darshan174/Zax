@@ -1,10 +1,10 @@
 .login {
-    background-color: rgb(178, 177, 177);
-    height: 600px;
+    background-color: white;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 500px;
+
 }
 
 .login__logo{
@@ -13,6 +13,9 @@
     object-fit: contain;
     width: 100px;
     border-radius: 50px;
+
+
+
 
 }
 
@@ -23,5 +26,52 @@
     border-radius: 5px;
     border: 1px solid lightgray;
     padding: 20px;
-    background-color: rgb(143, 143, 143);;
+    background-color: rgb(143, 143, 143);
+    width: 250px;
 }
+
+.login__container > h1 {
+    font-weight: 100;
+    margin-bottom: 20px;
+    height: 10px;
+    margin-top: 10px;
+}
+
+.login__container > form > h5 {
+    height: 2px;
+    font-weight: 300;
+
+}
+
+.login__container > form > input {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+}
+
+.login__container > p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.login__signInButton{
+    background: rgb(132, 132, 132);
+    border-radius: 20px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: white;
+}
+
+.login__registerButton{
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid;
+    height: 30px;
+    margin-top: 10px;
+    border-color: darkgrey;
+
+}
+

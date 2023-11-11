@@ -46,22 +46,22 @@ function Login() {
             <div className="login__container">
                 <h1>Sign-in</h1>
 
-                <from>
+                <form>
                     <h5>E-mail</h5>
                     <input type='text' value={email} onChange={e => setEmail
                     (e.target.value)}/>
 
-                    <h5>password</h5>
-                    <input type='passward' value={password}
+                    <h5>Password</h5>
+                    <input type='password' value={password}
                     onChange={e => setPassword(e.target.value)}/>
 
 
                     <button type='submit' onClick={signIn}
                     className='login__signInButton'>Sign In</button>
-                </from>
-                <p>Login form</p>
+                </form>
+                <p>Login in with your existing zax account or create a new one below 👇</p>
                 <button onClick={register}
-                className='login__registerButton'></button>
+                className='login__registerButton'>Create Zax account</button>
 
             </div>
             

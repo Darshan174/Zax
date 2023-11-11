@@ -3,14 +3,23 @@ import "./Header.css";
 import StorefrontIcon from "@mui/icons-material/Storefront";
 import SearchIcon from "@mui/icons-material/Search";
 import { HashRouter as Link } from "react-router-dom";
+// import { useStateValue } from './StateProvider'
+// import { auth } from './Firebase'
 
 function Header() {
+  // const [{ basket, user}, dispatch] = useStateValue();
+
+  // const handleAuthentication = () => {
+  //   if (user) {
+  //     auth.signOut()
+  //   }
+  // };
   return (
     <div className="header">
       <img
         className="header__logo"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3P0-WYoj8-FxOaGX72wa-xunLDmdtwaMNcA&usqp=CAU"
-        alt=""
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3P0-WYoj8-FxOaGX72wa-xunLDmdtwaMNcA&usqp=CAU" 
+        alt="" 
       />
       <div className="header__search">
         <input
@@ -22,8 +31,8 @@ function Header() {
       </div>
 
       <div className="header__nav">
-        <Link to="/login">
-          <div className="header__option">
+        <Link to= "/login">
+          <div  className="header__option">
             <span className="header__optionLineOne">Guest</span>
             <span className="header__optionLineTwo">Sign In</span>
           </div>

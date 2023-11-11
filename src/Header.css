@@ -2,7 +2,8 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: rgb(188, 188, 188);
+    background-color: white;
+
 }
 
 .header__logo{
@@ -17,6 +18,9 @@
     display: flex;
     flex:1;
     align-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+    
     
 }
 
@@ -38,6 +42,7 @@
 
 .header__optionLineOne {
     font-size: 10px;
+    
 }
 
 .header__optionLineTwo {
@@ -61,7 +66,7 @@
     flex-direction: column;
     margin-left:  5px;
     margin-right: 5px;
-    color: white;
+    color: black;
     
     
 }
