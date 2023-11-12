@@ -1,5 +1,5 @@
 .login {
-    background-color: white;
+
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -13,65 +13,62 @@
     object-fit: contain;
     width: 100px;
     border-radius: 50px;
-
-
-
-
 }
 
 .login__container{
-    height: fit-content;
+    height: 550px;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
-    border: 1px solid lightgray;
+    border-radius: 50px;
+    border: 5px solid black;
     padding: 20px;
-    background-color: rgb(143, 143, 143);
-    width: 250px;
+    width: 550px;
 }
 
 .login__container > h1 {
-    font-weight: 100;
-    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: xx-large;
+    margin-bottom: 90px;
     height: 10px;
     margin-top: 10px;
+    border-radius: 5px;
 }
 
 .login__container > form > h5 {
-    height: 2px;
+
     font-weight: 300;
 
 }
 
 .login__container > form > input {
     height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     background-color: white;
     width: 98%;
+    border-radius: 10px;
+    
 }
 
-.login__container > p {
-    margin-top: 15px;
-    font-size: 12px;
-}
 
 .login__signInButton{
-    background: rgb(132, 132, 132);
-    border-radius: 20px;
-    width: 100%;
+
+    border-radius: 10px;
+    width: 45%;
     height: 30px;
-    border: 1px solid;
+    border: 2px solid;
     margin-top: 10px;
+    margin-bottom: 20px;
     border-color: white;
+
 }
 
 .login__registerButton{
     border-radius: 10px;
     width: 100%;
-    border: 1px solid;
+    border: 2px solid black;
     height: 30px;
     margin-top: 10px;
-    border-color: darkgrey;
+
 
 }
 

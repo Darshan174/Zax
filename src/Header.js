@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import StorefrontIcon from "@mui/icons-material/Storefront";
 import SearchIcon from "@mui/icons-material/Search";
-import { HashRouter as Link } from "react-router-dom";
+
 // import { useStateValue } from './StateProvider'
 // import { auth } from './Firebase'
 
@@ -15,6 +15,9 @@ function Header() {
   //   }
   // };
   return (
+
+
+    <div class="shadow-2xl ...">
     <div className="header">
       <img
         className="header__logo"
@@ -31,12 +34,12 @@ function Header() {
       </div>
 
       <div className="header__nav">
-        <Link to= "/login">
+
           <div  className="header__option">
             <span className="header__optionLineOne">Guest</span>
             <span className="header__optionLineTwo">Sign In</span>
           </div>
-        </Link>
+
       </div>
 
       <div className="header__option">
@@ -54,6 +57,8 @@ function Header() {
         </span>
       </div>
     </div>
+    </div>
+
   );
 }
 

@@ -13,7 +13,7 @@ function Login() {
         auth 
         .signInWithEmailAndPassword(email, password)
         .then(auth => {
-            navigate('/')
+            navigate('/home')
         })
         .catch(error => alert(error.message))
 
@@ -27,7 +27,7 @@ function Login() {
             
             console.log(auth);
             if (auth) {
-                navigate('/')
+                navigate('/home')
             }
         })
         .catch(error => alert(error.message))
@@ -35,16 +35,18 @@ function Login() {
 
 
     return(
+        <div class="bg-gradient-to-r from-indigo-200 via-purple-100 to-pink-200 ...">
         <div className='login'>
-            <Link to="/">
+            <Link to="/home">
                 <img 
                 className='login__logo'
-                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3P0-WYoj8-FxOaGX72wa-xunLDmdtwaMNcA&usqp=CAU'
+                src='https://media.canva.com/1/image-resize/1/224_224_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9MVWZhay9NQUZ6N1RMVWZhay8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAAF8RkYQ-VBPtBg7w_4mv-yiZA28hN5kmOF8hrWqn29WF&exp=1699783979&x-canva-quality=thumbnail_large&csig=AAAAAAAAAAAAAAAAAAAAAMaXr6-tqO36GIwG7M7612A8Wuc55kqGN0S8Ms3JEcmP'
                  alt="" />
             </Link>
             
             <div className="login__container">
-                <h1>Sign-in</h1>
+                
+                <h1>Log-in</h1>
 
                 <form>
                     <h5>E-mail</h5>
@@ -59,12 +61,17 @@ function Login() {
                     <button type='submit' onClick={signIn}
                     className='login__signInButton'>Sign In</button>
                 </form>
-                <p>Login in with your existing zax account or create a new one below 👇</p>
+
+
+                
                 <button onClick={register}
                 className='login__registerButton'>Create Zax account</button>
+                <button onClick={register}
+                className='login__registerButton'>Login with Google</button>
 
             </div>
             
+            </div>
             </div>
     )
 
