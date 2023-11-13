@@ -2,7 +2,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: white;
+
 
 
 }
@@ -36,10 +36,6 @@
 
 .header__searchIcon{
     margin-right: 10px;
-
-
-    
-
 }
 
 .header__optionLineOne {
@@ -78,6 +74,7 @@
     margin-left:  5px;
     margin-right: 5px;
 
-    border-radius: 20px;
+
+
     padding: 5px;
 }

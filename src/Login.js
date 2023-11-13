@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { auth } from './Firebase';
 import React, { useState } from 'react';
-import './Login.css'
+import './Login.css';
 
 function Login() { 
     const navigate = useNavigate();
@@ -63,8 +63,9 @@ function Login() {
                 </form>
 
 
-                
-                <button onClick={register}
+
+
+                <button  onClick={register}
                 className='login__registerButton'>Create Zax account</button>
                 <button onClick={register}
                 className='login__registerButton'>Login with Google</button>

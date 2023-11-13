@@ -15,10 +15,9 @@ function Header() {
   //   }
   // };
   return (
-
-
     <div class="shadow-2xl ...">
     <div className="header">
+
       <img
         className="header__logo"
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3P0-WYoj8-FxOaGX72wa-xunLDmdtwaMNcA&usqp=CAU" 
@@ -30,7 +29,7 @@ function Header() {
           placeholder="Search Zax"
           type="text"
         />
-        <SearchIcon className="header__searchIcon" />
+        <SearchIcon  className="header__searchIcon" />
       </div>
 
       <div className="header__nav">
@@ -58,6 +57,7 @@ function Header() {
       </div>
     </div>
     </div>
+
 
   );
 }
