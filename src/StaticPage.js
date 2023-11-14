@@ -1,9 +1,4 @@
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Link } from "react-router-dom";
-
-
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -32,9 +27,9 @@ export default function Example() {
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-lg leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            <div className="relative rounded-full px-3 py-1 lg:text-3xl leading-6 text-gray-600  ">
               Hey there!👋  Welcome to {' '}
-              <a href="#" className="font-semibold text-indigo-600">
+              <a href="#" className="font-semibold text-black-600">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Zax! 🎉 <span aria-hidden="true"></span>
               </a>

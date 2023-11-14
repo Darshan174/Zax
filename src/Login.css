@@ -22,7 +22,8 @@
     border-radius: 50px;
     border: 5px solid black;
     padding: 20px;
-    width: 550px;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
 }
 
 .login__container > h1 {
@@ -36,7 +37,8 @@
 
 .login__container > form > h5 {
 
-    font-weight: 300;
+    font-weight: 3000;
+
 
 }
 
@@ -46,6 +48,8 @@
     background-color: white;
     width: 98%;
     border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
     
 }
 
