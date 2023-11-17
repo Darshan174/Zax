@@ -45,6 +45,7 @@ function Product({id, title, image, price, rating}) {
         <button type="button" class="bg-gradient-to-r from-green-100 to-blue-200 hover:from-pink-100
          hover:to-yellow-100 font-semibold hover:text-black py-2 px-4  hover:border-transparent rounded-lg ..." onClick={addToBasket} >Add to Basket</button>
     </div>
+    
 
 
 

@@ -41,10 +41,10 @@ function Header() {
 
 
 
-        <Link to="/sell">      
+        <Link to="/server">      
           <div class="header__option">
            <button type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 
-           hover:bg-gradient-to-br  font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 "> 
+           hover:bg-gradient-to-br  font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 shadow-xl ... "> 
             <span>Sell</span> 
           </button>
           </div>

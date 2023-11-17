@@ -1,71 +1,47 @@
-import axios from 'axios';
-import React, { Component } from 'react';
+import React, { useState, useEffect } from "react";
+import ProductForm from "./ProductForm";
+import Upload from "./Upload";
+import "./Sell.css";
+import ProductsContainer from "./ProductsContainer";
 
-class Sell extends Component {
-    state = {
-        selectedFile: null
-    };
-    onFileChange = event => {
-        this.setState ({ selectedFile: event.target.files[0] });
-    };
-    onFileUpload = () => {
-        const formData = new FormData();
+function Sell() {
+  const [products, setProducts] = useState([]);
+  const [imageUrls, setImageUrls] = useState([]);
 
-        formData.append(
-            "myFile",
-            this.state.selectedFile,
-            this.state.selectedFile.name
-        );
+  // Load products from localStorage on component mount
+  useEffect(() => {
+    const storedProducts = JSON.parse(localStorage.getItem('products')) || [];
+    setProducts(storedProducts);
+  }, []);
 
-        console.log(this.state.selectedFile);
-        axios.post("api/uploadfile", formData);
-    }
-
-    fileData = () => {
-        if (this.state.selectedFile) {
-            return (
-                <div className="sell"> 
-                    <h2>File Details:</h2>
-                    <p>File Name: {this.state.selectedFile.name}</p>
- 
-                    <p>File Type: {this.state.selectedFile.type}</p>
-
-                    <p>
-                        Last Modified:{" "}
-                        {this.state.selectedFile.lastModifiedDate.toDateString()}
-                   </p>
-
-                </div>
-            );
-        } else {
-            return (
-                <div>
-                    <br />
-                    <h4>Choose before Pressing the Upload button</h4>
-                </div>
-            );
-
-        };
-    }
-
-        render() {
-
-            return (
-            <div>
-                   
-                <div>
-                    <input type="file" onChange={this.onFileChange} />
-                    <button onClick={this.onFileUpload}>
-                        Upload!
-                    </button>
-                </div>
-                {this.fileData()}
-            </div>
+  const addProduct = (product) => {
+    const updatedProducts = [...products, product];
+    setProducts(updatedProducts);
+    
+    // Save updated products to localStorage
+    localStorage.setItem('products', JSON.stringify(updatedProducts));
+};
 
 
-            )
-        }
-    }
+  const handleImageUpload = (urls) => {
+    setImageUrls(urls);
+  };
 
+  return (
+    <div className="home__container">
+      {/* Product Form */}
+      <ProductForm onAddProduct={addProduct} />
+      {/* Image Upload */}
+      <Upload onImageUpload={handleImageUpload} />
+
+      {/* Display Products */}
+
+      <div classname="urproducts">
+        <h5>Your products</h5>
+      </div>
+      <ProductsContainer products={products} imageUrls={imageUrls} />
+    </div>
+  );
+}
 
 export default Sell;

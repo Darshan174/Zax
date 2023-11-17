@@ -3,13 +3,16 @@ import Header  from './Header';
 import Home  from './Home';
 import Example  from './StaticPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import  ImageUploader  from './uploadImg'
+
 import { useStateValue } from './StateProvider';
 import Checkout from './Checkout';
 import Sell from './Sell';
 
-import { useEffect } from "react";
-import { auth } from "./Firebase";
+
+
+import React,{ useEffect } from "react";
+import { auth } from "./firebase";
+
 
 
 
@@ -37,7 +40,6 @@ import Login from "./Login";
   //       }
   //     })
   //   }, [])
-    
 
   return (
 
@@ -52,7 +54,10 @@ import Login from "./Login";
        <Route path="/login" element={<Login />}/>
        <Route path="/home" element={ [<Header/>,<Home/>]}/> 
        <Route path="/checkout" element={ [<Header/>,<Checkout/>]}/> 
-       <Route path="/sell" element={<Sell/>}/>
+       <Route path="/server" element={[<Header/>,<Sell/>] }/>
+
+       {/* <Sell setProducts={setProducts} />
+       <Home products={products} /> */}
 
       
       </Route >
