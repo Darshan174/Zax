@@ -100,9 +100,11 @@ function Home() {
                 />
                
 
-                <ProductsContainer products={products} imageUrls={imageUrls} />
               </div>
+              <div className="home__row">
+                <ProductsContainer products={products} imageUrls={imageUrls} />
 
+              </div>
               </div>
 
       

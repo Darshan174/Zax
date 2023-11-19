@@ -7,7 +7,7 @@ import './Subtotal.css';
 
 function Subtotal () {
     const navigate = useNavigate();
-    const [{ basket }, dsipatch] = useStateValue();
+    const [{ basket }, dispatch] = useStateValue();
 
   return (
     <div style={{ position: "absolute", left: "900px" }} >
@@ -29,7 +29,11 @@ function Subtotal () {
         prefix={"$"}
         />
 
-        <button type="button" class="bg-gradient-to-r from-green-100 to-blue-200 hover:from-pink-100 hover:to-yellow-100 font-semibold hover:text-black py-2 px-4  hover:border-transparent rounded-lg ..."  onClick={e => navigate('/payment',{replace:true})}>Proceed to Checkout</button>
+        <button type="button" class="bg-gradient-to-r from-green-100 to-blue-200 hover:from-pink-100 hover:to-yellow-100 
+        font-semibold hover:text-black py-2 px-4  hover:border-transparent rounded-lg ..."  
+        onClick={e => navigate('/payment',{replace:true})}>
+          Proceed to Checkout
+          </button>
         
       
     </div>

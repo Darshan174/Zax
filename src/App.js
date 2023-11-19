@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 import Checkout from './Checkout';
 import Sell from './Sell';
+import Payment from './Payment';
 
 
 
@@ -55,6 +56,8 @@ import Login from "./Login";
        <Route path="/home" element={ [<Header/>,<Home/>]}/> 
        <Route path="/checkout" element={ [<Header/>,<Checkout/>]}/> 
        <Route path="/server" element={[<Header/>,<Sell/>] }/>
+       <Route path="/payment" element={[<Header/>,<Payment/>] }/>
+
 
        {/* <Sell setProducts={setProducts} />
        <Home products={products} /> */}
