@@ -1,0 +1,2902 @@
+[debug] [2023-11-22T18:25:47.321Z] ----------------------------------------------------------------------
+[debug] [2023-11-22T18:25:47.324Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2023-11-22T18:25:47.324Z] CLI Version:   12.8.0
+[debug] [2023-11-22T18:25:47.324Z] Platform:      darwin
+[debug] [2023-11-22T18:25:47.325Z] Node Version:  v18.13.0
+[debug] [2023-11-22T18:25:47.326Z] Time:          Wed Nov 22 2023 23:55:47 GMT+0530 (India Standard Time)
+[debug] [2023-11-22T18:25:47.326Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-22T18:25:47.329Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-11-22T18:25:47.469Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-22T18:25:47.470Z] > authorizing via signed-in user (darshan002321@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-11-22T18:25:47.934Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-22T18:25:47.935Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-11-22T18:25:47.942Z] [hub] writing locator at /var/folders/qr/q9dt2f491px4dm99cn1km5qh0000gn/T/hub-zaxecommerce.json
+[debug] [2023-11-22T18:25:48.251Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-22T18:25:48.251Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-22T18:25:48.251Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-11-22T18:25:48.254Z] defaultcredentials: writing to file /Users/darshan/.config/firebase/darshan002321_gmail_com_application_default_credentials.json
+[debug] [2023-11-22T18:25:48.262Z] Setting GAC to /Users/darshan/.config/firebase/darshan002321_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/darshan/.config/firebase/darshan002321_gmail_com_application_default_credentials.json"}}
+[debug] [2023-11-22T18:25:48.263Z] > refreshing access token with scopes: []
+[debug] [2023-11-22T18:25:48.264Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-22T18:25:48.264Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-22T18:25:48.771Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-11-22T18:25:48.771Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-22T18:25:48.798Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/zaxecommerce/adminSdkConfig [none]
+[debug] [2023-11-22T18:25:48.881Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-11-22T18:25:48.881Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-11-22T18:25:49.687Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/zaxecommerce/adminSdkConfig 200
+[debug] [2023-11-22T18:25:49.687Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/zaxecommerce/adminSdkConfig {"projectId":"zaxecommerce","storageBucket":"zaxecommerce.appspot.com","locationId":"us-central"}
+[debug] [2023-11-22T18:25:49.714Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-11-22T18:25:49.714Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-11-22T18:25:49.714Z] Starting Emulator UI with command {"binary":"node","args":["/Users/darshan/.cache/firebase/emulators/ui-v1.11.7/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/darshan/.cache/firebase/emulators/ui-v1.11.7/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-11-22T18:25:49.850Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-11-22T18:25:49.851Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/darshan/Desktop/mlhsubmission/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/darshan/Desktop/mlhsubmission/functions\" for Cloud Functions..."}}
+[debug] [2023-11-22T18:25:49.978Z] Validating nodejs source
+[debug] [2023-11-22T18:25:50.785Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:25:50.785Z] Building nodejs source
+[debug] [2023-11-22T18:25:50.785Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:25:50.788Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:25:50.794Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8266
+
+[debug] [2023-11-22T18:25:51.223Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] ✔  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/zaxecommerce/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/zaxecommerce/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-11-22T18:27:37.063Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:27:38.064Z] Validating nodejs source
+[debug] [2023-11-22T18:27:39.037Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:27:39.037Z] Building nodejs source
+[debug] [2023-11-22T18:27:39.037Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:27:39.039Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:27:39.040Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8797
+
+[debug] [2023-11-22T18:27:39.508Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:27:42.408Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:27:43.408Z] Validating nodejs source
+[debug] [2023-11-22T18:27:44.038Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:27:44.038Z] Building nodejs source
+[debug] [2023-11-22T18:27:44.038Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:27:44.039Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:27:44.040Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8641
+
+[debug] [2023-11-22T18:27:44.401Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:27:44.461Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:27:44.502Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:27:45.503Z] Validating nodejs source
+[debug] [2023-11-22T18:27:46.164Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:27:46.164Z] Building nodejs source
+[debug] [2023-11-22T18:27:46.164Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:27:46.165Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:27:46.167Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8430
+
+[debug] [2023-11-22T18:27:46.591Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:27:46.879Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:27:46.980Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:27:47.980Z] Validating nodejs source
+[debug] [2023-11-22T18:27:49.196Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:27:49.196Z] Building nodejs source
+[debug] [2023-11-22T18:27:49.196Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:27:49.198Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:27:49.198Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8360
+
+[debug] [2023-11-22T18:27:49.649Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:27:54.331Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:27:54.432Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:27:55.433Z] Validating nodejs source
+[debug] [2023-11-22T18:27:56.043Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:27:56.043Z] Building nodejs source
+[debug] [2023-11-22T18:27:56.043Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:27:56.044Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:27:56.046Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8863
+
+[debug] [2023-11-22T18:27:56.485Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:27:56.944Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:27:57.044Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:27:58.046Z] Validating nodejs source
+[debug] [2023-11-22T18:27:58.646Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:27:58.646Z] Building nodejs source
+[debug] [2023-11-22T18:27:58.646Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:27:58.647Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:27:58.648Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8511
+
+[debug] [2023-11-22T18:27:59.090Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:28:12.966Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:28:13.969Z] Validating nodejs source
+[debug] [2023-11-22T18:28:14.710Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:28:14.711Z] Building nodejs source
+[debug] [2023-11-22T18:28:14.711Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:28:14.712Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:28:14.713Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8531
+
+[debug] [2023-11-22T18:28:15.221Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:32:53.407Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:32:54.408Z] Validating nodejs source
+[debug] [2023-11-22T18:33:00.558Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:33:00.558Z] Building nodejs source
+[debug] [2023-11-22T18:33:00.558Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:33:00.560Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:33:00.560Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:33:00.561Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8170
+
+[debug] [2023-11-22T18:33:00.979Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:33:01.561Z] Validating nodejs source
+[debug] [2023-11-22T18:33:02.722Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:33:02.722Z] Building nodejs source
+[debug] [2023-11-22T18:33:02.722Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:33:02.723Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:33:02.724Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8483
+
+[debug] [2023-11-22T18:33:03.172Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:33:05.645Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:33:06.647Z] Validating nodejs source
+[debug] [2023-11-22T18:33:07.641Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:33:07.641Z] Building nodejs source
+[debug] [2023-11-22T18:33:07.641Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:33:07.642Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:33:07.643Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-11-22T18:33:07.701Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:33:07.803Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[info] Serving at port 8785
+
+[debug] [2023-11-22T18:33:08.089Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:33:08.805Z] Validating nodejs source
+[debug] [2023-11-22T18:33:09.433Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:33:09.433Z] Building nodejs source
+[debug] [2023-11-22T18:33:09.433Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:33:09.434Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:33:09.435Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8698
+
+[debug] [2023-11-22T18:33:09.933Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:33:12.056Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:33:12.156Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:33:13.158Z] Validating nodejs source
+[debug] [2023-11-22T18:33:14.139Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:33:14.139Z] Building nodejs source
+[debug] [2023-11-22T18:33:14.139Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:33:14.140Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:33:14.141Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-11-22T18:33:14.185Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[info] Serving at port 8672
+
+[debug] [2023-11-22T18:33:14.721Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:33:15.186Z] Validating nodejs source
+[debug] [2023-11-22T18:33:15.857Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:33:15.857Z] Building nodejs source
+[debug] [2023-11-22T18:33:15.858Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:33:15.859Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:33:15.860Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8174
+
+[debug] [2023-11-22T18:33:16.293Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:33:24.200Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:33:24.300Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:33:25.302Z] Validating nodejs source
+[debug] [2023-11-22T18:33:26.248Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:33:26.248Z] Building nodejs source
+[debug] [2023-11-22T18:33:26.249Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:33:26.253Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:33:26.254Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-11-22T18:33:26.325Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[info] Serving at port 8527
+
+[debug] [2023-11-22T18:33:26.768Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:33:27.325Z] Validating nodejs source
+[debug] [2023-11-22T18:33:27.975Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:33:27.975Z] Building nodejs source
+[debug] [2023-11-22T18:33:27.975Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:33:27.976Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:33:27.976Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:33:27.977Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8499
+
+[debug] [2023-11-22T18:33:28.536Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:33:28.978Z] Validating nodejs source
+[debug] [2023-11-22T18:33:29.604Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:33:29.604Z] Building nodejs source
+[debug] [2023-11-22T18:33:29.604Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:33:29.605Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:33:29.606Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8345
+
+[debug] [2023-11-22T18:33:30.177Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:33:33.047Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:33:33.147Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:33:34.149Z] Validating nodejs source
+[debug] [2023-11-22T18:33:34.769Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:33:34.769Z] Building nodejs source
+[debug] [2023-11-22T18:33:34.769Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:33:34.770Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:33:34.771Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8142
+
+[debug] [2023-11-22T18:33:35.270Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:33:36.495Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:33:36.595Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:33:37.596Z] Validating nodejs source
+[debug] [2023-11-22T18:33:38.346Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:33:38.346Z] Building nodejs source
+[debug] [2023-11-22T18:33:38.347Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:33:38.348Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:33:38.349Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8147
+
+[error] /Users/darshan/Desktop/mlhsubmission/functions/index.js:19
+app.get("/", (request, response) => response.status(200).send('Hello world"))
+                                                              ^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at internalCompileFunction (node:internal/vm:74:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1141:20)
+    at Module._compile (node:internal/modules/cjs/loader:1182:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1272:10)
+    at Module.load (node:internal/modules/cjs/loader:1081:32)
+    at Module._load (node:internal/modules/cjs/loader:922:12)
+    at Module.require (node:internal/modules/cjs/loader:1105:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at loadModule (/Users/darshan/Desktop/mlhsubmission/functions/node_modules/firebase-functions/lib/runtime/loader.js:40:16)
+    at loadStack (/Users/darshan/Desktop/mlhsubmission/functions/node_modules/firebase-functions/lib/runtime/loader.js:93:23)
+
+[debug] [2023-11-22T18:33:38.549Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Invalid or unexpected token
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-11-22T18:33:38.977Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:33:39.977Z] Validating nodejs source
+[debug] [2023-11-22T18:33:42.631Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:33:42.631Z] Building nodejs source
+[debug] [2023-11-22T18:33:42.631Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:33:42.632Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:33:42.633Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8631
+
+[debug] [2023-11-22T18:33:43.050Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:33:44.434Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:33:45.435Z] Validating nodejs source
+[debug] [2023-11-22T18:33:46.087Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:33:46.088Z] Building nodejs source
+[debug] [2023-11-22T18:33:46.088Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:33:46.088Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:33:46.090Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8856
+
+[debug] [2023-11-22T18:33:46.721Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:33:59.767Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:00.769Z] Validating nodejs source
+[debug] [2023-11-22T18:34:01.683Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:34:01.683Z] Building nodejs source
+[debug] [2023-11-22T18:34:01.683Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:34:01.684Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:34:01.685Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8868
+
+[debug] [2023-11-22T18:34:02.248Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:34:06.185Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:07.186Z] Validating nodejs source
+[debug] [2023-11-22T18:34:08.164Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:34:08.165Z] Building nodejs source
+[debug] [2023-11-22T18:34:08.165Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:34:08.166Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:34:08.167Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8806
+
+[debug] [2023-11-22T18:34:08.692Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:34:09.242Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:09.341Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:10.342Z] Validating nodejs source
+[debug] [2023-11-22T18:34:11.108Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:34:11.108Z] Building nodejs source
+[debug] [2023-11-22T18:34:11.108Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:34:11.109Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:34:11.110Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8263
+
+[error] /Users/darshan/Desktop/mlhsubmission/functions/index.js:6
+("sk_test_51MaNiLSERVek0tdZUoZMexx43VbJBUYjMJ
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at internalCompileFunction (node:internal/vm:74:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1141:20)
+    at Module._compile (node:internal/modules/cjs/loader:1182:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1272:10)
+    at Module.load (node:internal/modules/cjs/loader:1081:32)
+    at Module._load (node:internal/modules/cjs/loader:922:12)
+    at Module.require (node:internal/modules/cjs/loader:1105:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at loadModule (/Users/darshan/Desktop/mlhsubmission/functions/node_modules/firebase-functions/lib/runtime/loader.js:40:16)
+    at loadStack (/Users/darshan/Desktop/mlhsubmission/functions/node_modules/firebase-functions/lib/runtime/loader.js:93:23)
+
+[debug] [2023-11-22T18:34:11.330Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Invalid or unexpected token
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-11-22T18:34:15.861Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:15.962Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:16.964Z] Validating nodejs source
+[debug] [2023-11-22T18:34:18.574Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:34:18.574Z] Building nodejs source
+[debug] [2023-11-22T18:34:18.574Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:34:18.576Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:34:18.577Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8861
+
+[debug] [2023-11-22T18:34:19.068Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:34:23.971Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:24.071Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:25.073Z] Validating nodejs source
+[debug] [2023-11-22T18:34:25.739Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:34:25.739Z] Building nodejs source
+[debug] [2023-11-22T18:34:25.739Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:34:25.740Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:34:25.741Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8269
+
+[debug] [2023-11-22T18:34:26.397Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:34:29.381Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:30.382Z] Validating nodejs source
+[debug] [2023-11-22T18:34:31.070Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:34:31.071Z] Building nodejs source
+[debug] [2023-11-22T18:34:31.071Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:34:31.071Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:31.072Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:34:31.073Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8468
+
+[debug] [2023-11-22T18:34:31.504Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:34:31.877Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:32.879Z] Validating nodejs source
+[debug] [2023-11-22T18:34:33.498Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:34:33.499Z] Building nodejs source
+[debug] [2023-11-22T18:34:33.499Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:34:33.499Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:34:33.500Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8167
+
+[error] /Users/darshan/Desktop/mlhsubmission/functions/index.js:7
+}
+^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:74:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1141:20)
+    at Module._compile (node:internal/modules/cjs/loader:1182:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1272:10)
+    at Module.load (node:internal/modules/cjs/loader:1081:32)
+    at Module._load (node:internal/modules/cjs/loader:922:12)
+    at Module.require (node:internal/modules/cjs/loader:1105:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at loadModule (/Users/darshan/Desktop/mlhsubmission/functions/node_modules/firebase-functions/lib/runtime/loader.js:40:16)
+    at loadStack (/Users/darshan/Desktop/mlhsubmission/functions/node_modules/firebase-functions/lib/runtime/loader.js:93:23)
+
+[debug] [2023-11-22T18:34:33.789Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '}'
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-11-22T18:34:35.138Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:36.140Z] Validating nodejs source
+[debug] [2023-11-22T18:34:38.367Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:34:38.368Z] Building nodejs source
+[debug] [2023-11-22T18:34:38.368Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:34:38.368Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:38.368Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:34:38.369Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8060
+
+[debug] [2023-11-22T18:34:38.805Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:34:39.369Z] Validating nodejs source
+[debug] [2023-11-22T18:34:41.094Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:34:41.094Z] Building nodejs source
+[debug] [2023-11-22T18:34:41.095Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:34:41.097Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:34:41.098Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8201
+
+[debug] [2023-11-22T18:34:41.551Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:34:44.999Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:46.001Z] Validating nodejs source
+[debug] [2023-11-22T18:34:46.645Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:34:46.645Z] Building nodejs source
+[debug] [2023-11-22T18:34:46.645Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:34:46.646Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:34:46.647Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8753
+
+[debug] [2023-11-22T18:34:46.974Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:47.074Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:47.078Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:34:48.075Z] Validating nodejs source
+[debug] [2023-11-22T18:34:49.358Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:34:49.358Z] Building nodejs source
+[debug] [2023-11-22T18:34:49.358Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:34:49.360Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:34:49.360Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-11-22T18:34:49.368Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[info] Serving at port 8315
+
+[debug] [2023-11-22T18:34:49.814Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:34:50.369Z] Validating nodejs source
+[debug] [2023-11-22T18:34:51.088Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:34:51.088Z] Building nodejs source
+[debug] [2023-11-22T18:34:51.088Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:34:51.089Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:34:51.090Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8920
+
+[debug] [2023-11-22T18:34:51.944Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:34:54.295Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:54.395Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:55.396Z] Validating nodejs source
+[debug] [2023-11-22T18:34:56.033Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:34:56.034Z] Building nodejs source
+[debug] [2023-11-22T18:34:56.034Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:34:56.034Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:56.035Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:34:56.036Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8587
+
+[error] /Users/darshan/Desktop/mlhsubmission/functions/index.js:24
+    console.log('"Payment Request Recieved BOOM!! for this amount >>>", total)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at internalCompileFunction (node:internal/vm:74:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1141:20)
+    at Module._compile (node:internal/modules/cjs/loader:1182:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1272:10)
+    at Module.load (node:internal/modules/cjs/loader:1081:32)
+    at Module._load (node:internal/modules/cjs/loader:922:12)
+    at Module.require (node:internal/modules/cjs/loader:1105:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at loadModule (/Users/darshan/Desktop/mlhsubmission/functions/node_modules/firebase-functions/lib/runtime/loader.js:40:16)
+    at loadStack (/Users/darshan/Desktop/mlhsubmission/functions/node_modules/firebase-functions/lib/runtime/loader.js:93:23)
+
+[debug] [2023-11-22T18:34:56.490Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Invalid or unexpected token
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-11-22T18:34:57.037Z] Validating nodejs source
+[debug] [2023-11-22T18:34:57.676Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:34:57.676Z] Building nodejs source
+[debug] [2023-11-22T18:34:57.676Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:34:57.676Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:34:57.677Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8298
+
+[error] /Users/darshan/Desktop/mlhsubmission/functions/index.js:24
+    console.log('"Payment Request Recieved BOOM!! for this amount >>>", total)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at internalCompileFunction (node:internal/vm:74:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1141:20)
+    at Module._compile (node:internal/modules/cjs/loader:1182:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1272:10)
+    at Module.load (node:internal/modules/cjs/loader:1081:32)
+    at Module._load (node:internal/modules/cjs/loader:922:12)
+    at Module.require (node:internal/modules/cjs/loader:1105:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at loadModule (/Users/darshan/Desktop/mlhsubmission/functions/node_modules/firebase-functions/lib/runtime/loader.js:40:16)
+    at loadStack (/Users/darshan/Desktop/mlhsubmission/functions/node_modules/firebase-functions/lib/runtime/loader.js:93:23)
+
+[debug] [2023-11-22T18:34:57.862Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Invalid or unexpected token
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-11-22T18:34:59.069Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:34:59.169Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:00.171Z] Validating nodejs source
+[debug] [2023-11-22T18:35:00.781Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:35:00.782Z] Building nodejs source
+[debug] [2023-11-22T18:35:00.782Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:35:00.782Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:35:00.783Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8566
+
+[debug] [2023-11-22T18:35:01.225Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:35:06.113Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:07.114Z] Validating nodejs source
+[debug] [2023-11-22T18:35:07.738Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:35:07.738Z] Building nodejs source
+[debug] [2023-11-22T18:35:07.738Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:35:07.739Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:07.742Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:35:07.743Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8013
+
+[debug] [2023-11-22T18:35:08.167Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:35:08.300Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:08.400Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:09.402Z] Validating nodejs source
+[debug] [2023-11-22T18:35:10.058Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:35:10.059Z] Building nodejs source
+[debug] [2023-11-22T18:35:10.059Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:35:10.060Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:10.060Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:35:10.061Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8593
+
+[debug] [2023-11-22T18:35:10.607Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:35:11.061Z] Validating nodejs source
+[debug] [2023-11-22T18:35:11.678Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:35:11.678Z] Building nodejs source
+[debug] [2023-11-22T18:35:11.678Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:35:11.680Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:35:11.681Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8993
+
+[debug] [2023-11-22T18:35:12.269Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:35:16.503Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:16.603Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:17.604Z] Validating nodejs source
+[debug] [2023-11-22T18:35:18.478Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:35:18.479Z] Building nodejs source
+[debug] [2023-11-22T18:35:18.479Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:35:18.479Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:18.480Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:35:18.481Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8648
+
+[debug] [2023-11-22T18:35:18.716Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:18.817Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:18.908Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:35:19.817Z] Validating nodejs source
+[debug] [2023-11-22T18:35:20.474Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:35:20.474Z] Building nodejs source
+[debug] [2023-11-22T18:35:20.474Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:35:20.476Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:35:20.476Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8472
+
+[debug] [2023-11-22T18:35:20.907Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:35:24.423Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:25.425Z] Validating nodejs source
+[debug] [2023-11-22T18:35:26.044Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:35:26.044Z] Building nodejs source
+[debug] [2023-11-22T18:35:26.044Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:35:26.044Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:35:26.046Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8657
+
+[debug] [2023-11-22T18:35:26.597Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:35:28.184Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:29.186Z] Validating nodejs source
+[debug] [2023-11-22T18:35:30.006Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:35:30.006Z] Building nodejs source
+[debug] [2023-11-22T18:35:30.006Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:35:30.007Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:35:30.008Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8369
+
+[debug] [2023-11-22T18:35:30.447Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:35:32.037Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:33.038Z] Validating nodejs source
+[debug] [2023-11-22T18:35:33.722Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:35:33.722Z] Building nodejs source
+[debug] [2023-11-22T18:35:33.722Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:35:33.723Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:35:33.723Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8171
+
+[debug] [2023-11-22T18:35:34.167Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:35:34.268Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:35.269Z] Validating nodejs source
+[debug] [2023-11-22T18:35:37.883Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:35:37.883Z] Building nodejs source
+[debug] [2023-11-22T18:35:37.883Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:35:37.885Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:35:37.886Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8155
+
+[debug] [2023-11-22T18:35:38.341Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:35:39.290Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:40.291Z] Validating nodejs source
+[debug] [2023-11-22T18:35:40.901Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:35:40.901Z] Building nodejs source
+[debug] [2023-11-22T18:35:40.901Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:35:40.902Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:35:40.902Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8903
+
+[debug] [2023-11-22T18:35:41.324Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:35:45.039Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:46.040Z] Validating nodejs source
+[debug] [2023-11-22T18:35:46.869Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:35:46.869Z] Building nodejs source
+[debug] [2023-11-22T18:35:46.869Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:35:46.870Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:35:46.871Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8522
+
+[debug] [2023-11-22T18:35:47.342Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:35:48.198Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:48.299Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:49.300Z] Validating nodejs source
+[debug] [2023-11-22T18:35:49.900Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:35:49.900Z] Building nodejs source
+[debug] [2023-11-22T18:35:49.900Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:35:49.901Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:35:49.902Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8455
+
+[debug] [2023-11-22T18:35:50.366Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:35:52.545Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:53.546Z] Validating nodejs source
+[debug] [2023-11-22T18:35:54.649Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:35:54.649Z] Building nodejs source
+[debug] [2023-11-22T18:35:54.649Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:35:54.650Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:35:54.651Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8776
+
+[debug] [2023-11-22T18:35:55.060Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:35:56.103Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:35:57.105Z] Validating nodejs source
+[debug] [2023-11-22T18:35:57.897Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:35:57.897Z] Building nodejs source
+[debug] [2023-11-22T18:35:57.897Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:35:57.898Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:35:57.899Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8520
+
+[debug] [2023-11-22T18:35:58.427Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:36:00.221Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:36:00.321Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:36:01.323Z] Validating nodejs source
+[debug] [2023-11-22T18:36:03.600Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:36:03.601Z] Building nodejs source
+[debug] [2023-11-22T18:36:03.601Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:36:03.601Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:36:03.602Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8819
+
+[debug] [2023-11-22T18:36:04.013Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:36:04.538Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:36:05.538Z] Validating nodejs source
+[debug] [2023-11-22T18:36:07.174Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:36:07.174Z] Building nodejs source
+[debug] [2023-11-22T18:36:07.174Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:36:07.175Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:36:07.175Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8087
+
+[debug] [2023-11-22T18:36:07.614Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:36:09.679Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:36:10.680Z] Validating nodejs source
+[debug] [2023-11-22T18:36:11.329Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:36:11.329Z] Building nodejs source
+[debug] [2023-11-22T18:36:11.330Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:36:11.330Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:36:11.331Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8947
+
+[debug] [2023-11-22T18:36:11.744Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:36:11.879Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:36:12.745Z] Validating nodejs source
+[debug] [2023-11-22T18:36:18.398Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:36:18.398Z] Building nodejs source
+[debug] [2023-11-22T18:36:18.398Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:36:18.401Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:36:18.402Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8467
+
+[debug] [2023-11-22T18:36:18.814Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:36:20.255Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:36:20.355Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:36:21.356Z] Validating nodejs source
+[debug] [2023-11-22T18:36:21.980Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:36:21.980Z] Building nodejs source
+[debug] [2023-11-22T18:36:21.980Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:36:21.981Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:36:21.982Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8515
+
+[debug] [2023-11-22T18:36:22.462Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:36:23.497Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:36:24.498Z] Validating nodejs source
+[debug] [2023-11-22T18:36:25.466Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:36:25.467Z] Building nodejs source
+[debug] [2023-11-22T18:36:25.467Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:36:25.468Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:36:25.469Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8020
+
+[debug] [2023-11-22T18:36:26.000Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:36:26.301Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:36:27.303Z] Validating nodejs source
+[debug] [2023-11-22T18:36:27.947Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:36:27.947Z] Building nodejs source
+[debug] [2023-11-22T18:36:27.948Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:36:27.948Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:36:27.949Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8634
+
+[debug] [2023-11-22T18:36:28.399Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:36:28.439Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:36:28.539Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:36:29.512Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:36:29.613Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:36:30.613Z] Validating nodejs source
+[debug] [2023-11-22T18:36:31.241Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:36:31.241Z] Building nodejs source
+[debug] [2023-11-22T18:36:31.242Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:36:31.242Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:36:31.243Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8552
+
+[debug] [2023-11-22T18:36:31.793Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:36:33.257Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:36:34.259Z] Validating nodejs source
+[debug] [2023-11-22T18:36:35.782Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:36:35.782Z] Building nodejs source
+[debug] [2023-11-22T18:36:35.782Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:36:35.783Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:36:35.784Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8520
+
+[debug] [2023-11-22T18:36:36.246Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:36:52.263Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:36:53.264Z] Validating nodejs source
+[debug] [2023-11-22T18:36:55.734Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:36:55.734Z] Building nodejs source
+[debug] [2023-11-22T18:36:55.734Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:36:55.735Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:36:55.735Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:36:55.736Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8841
+
+[debug] [2023-11-22T18:36:56.193Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:36:56.736Z] Validating nodejs source
+[debug] [2023-11-22T18:36:58.628Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:36:58.628Z] Building nodejs source
+[debug] [2023-11-22T18:36:58.628Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:36:58.629Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:36:58.630Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8038
+
+[debug] [2023-11-22T18:36:59.023Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:37:00.638Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:37:00.738Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:37:01.739Z] Validating nodejs source
+[debug] [2023-11-22T18:37:02.469Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:37:02.469Z] Building nodejs source
+[debug] [2023-11-22T18:37:02.469Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:37:02.470Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:37:02.470Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:37:02.471Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8378
+
+[debug] [2023-11-22T18:37:02.978Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:37:03.471Z] Validating nodejs source
+[debug] [2023-11-22T18:37:04.089Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:37:04.089Z] Building nodejs source
+[debug] [2023-11-22T18:37:04.089Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:37:04.090Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:37:04.091Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8835
+
+[debug] [2023-11-22T18:37:04.500Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:37:34.437Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:37:35.438Z] Validating nodejs source
+[debug] [2023-11-22T18:37:36.243Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:37:36.243Z] Building nodejs source
+[debug] [2023-11-22T18:37:36.243Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:37:36.244Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:37:36.246Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8095
+
+[debug] [2023-11-22T18:37:36.817Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:37:51.159Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:37:52.161Z] Validating nodejs source
+[debug] [2023-11-22T18:37:52.809Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:37:52.809Z] Building nodejs source
+[debug] [2023-11-22T18:37:52.809Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:37:52.810Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:37:52.810Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:37:52.811Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8492
+
+[debug] [2023-11-22T18:37:53.259Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:37:53.811Z] Validating nodejs source
+[debug] [2023-11-22T18:37:54.651Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:37:54.651Z] Building nodejs source
+[debug] [2023-11-22T18:37:54.651Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:37:54.652Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:37:54.654Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8716
+
+[debug] [2023-11-22T18:37:55.219Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:38:02.279Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:38:02.380Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:38:03.382Z] Validating nodejs source
+[debug] [2023-11-22T18:38:06.208Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:38:06.208Z] Building nodejs source
+[debug] [2023-11-22T18:38:06.208Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:38:06.210Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:38:06.211Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8019
+
+[debug] [2023-11-22T18:38:06.624Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-22T18:38:08.731Z] File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/darshan/Desktop/mlhsubmission/functions/index.js changed, reloading triggers"}}
+[debug] [2023-11-22T18:38:09.732Z] Validating nodejs source
+[debug] [2023-11-22T18:38:10.364Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T18:38:10.364Z] Building nodejs source
+[debug] [2023-11-22T18:38:10.364Z] Failed to find version of module node: reached end of search path /Users/darshan/Desktop/mlhsubmission/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-11-22T18:38:10.365Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T18:38:10.365Z] Found firebase-functions binary at '/Users/darshan/Desktop/mlhsubmission/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8533
+
+[debug] [2023-11-22T18:38:10.899Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-23T09:44:22.941Z] Received signal SIGINT (Ctrl-C) 1
+[info]  
+[info] i  emulators: Received SIGINT (Ctrl-C) for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGINT (Ctrl-C) signal again to stop right now. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[warn] ⚠  Emulator UI has exited upon receiving signal: SIGINT 
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  eventarc: Stopping Eventarc Emulator {"metadata":{"emulator":{"name":"eventarc"},"message":"Stopping Eventarc Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
+[debug] [2023-11-23T09:44:33.114Z] Error: Timed out.
+    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/utils.js:254:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.

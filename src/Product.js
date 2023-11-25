@@ -20,16 +20,10 @@ function Product({ id, title, image, price, rating }) {
       },
     });
   };
-  const removeFromBasket = () => {
-    dispatch({
-      type: "REMOVE",
-      id: id,
-    });
-    // NOT WORKING, FIX LATER!
-    //remove the item from the basket
-  };
+
   return (
     <div className="product">
+      <img src={image} alt="" />
       <div className="product__info">
         <p>{title}</p>
         <p className="product__price">
@@ -44,7 +38,6 @@ function Product({ id, title, image, price, rating }) {
             ))}
         </div>
       </div>
-      <img src={image} alt="" />
 
       <button
         type="button"
@@ -54,8 +47,6 @@ function Product({ id, title, image, price, rating }) {
       >
         Add to Basket
       </button>
-
-      <button onClick={removeFromBasket}>Remove from Basket</button>
     </div>
   );
 }

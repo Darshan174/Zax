@@ -40,7 +40,7 @@ function ProductForm({ onAddProduct }) {
             >
               Title:
               <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                className="appearance-none block w-full bg-white text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 id="grid-first-name"
                 type="text"
                 placeholder="Your product name..."
@@ -59,7 +59,7 @@ function ProductForm({ onAddProduct }) {
             >
               Price:
               <input
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 shadow-2xl ..."
+              className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 shadow-2xl ..."
               id="grid-last-name"
               placeholder="$$$"
                 type="number"
@@ -80,7 +80,7 @@ function ProductForm({ onAddProduct }) {
             >
               Rating:
               <input
-                className="shadow-2xl ...appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="shadow-2xl ...appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 type="number"
                 placeholder="What condition is your product in? (1 star-old and 5 star-new)"
                 name="rating"

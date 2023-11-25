@@ -32,7 +32,7 @@ function Login() {
   };
 
   return (
-    <div class="bg-gradient-to-r from-indigo-200 via-purple-100 to-pink-200 ...">
+    <div class="bg-gradient-to-r from-gray-400 via-gray-100 to-gray-400 ...">
       <div className="login">
         <Link to="/home">
           <img
@@ -43,7 +43,7 @@ function Login() {
         </Link>
 
         <div class="relative" className="login__container">
-          <h1>Log-in</h1>
+          <h1 >Log-In</h1>
 
           <form>
             <h5>E-mail</h5>

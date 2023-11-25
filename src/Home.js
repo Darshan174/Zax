@@ -1,117 +1,130 @@
-import React, {useEffect, useState} from 'react';
-import './Home.css'
-import Product from './Product';
-import ProductsContainer from './ProductsContainer';
-import ProductForm from "./ProductForm";
-import Upload from "./Upload";
+import React, { useEffect, useState } from "react";
+import "./Home.css";
+import Product from "./Product";
+import ProductsContainer from "./ProductsContainer";
+import Carousel from "./Carousel";
 
 
 
 function Home() {
   const [products, setProducts] = useState([]);
   const [imageUrls, setImageUrls] = useState([]);
+  
+  
   // Load products from localStorage on component mount
   useEffect(() => {
-    const storedProducts = JSON.parse(localStorage.getItem('products')) || [];
+    const storedProducts = JSON.parse(localStorage.getItem("products")) || [];
     setProducts(storedProducts);
+    
+    // Assuming each product has an "imageUrls" property containing the list of image URLs
+    const allImageUrls = storedProducts.reduce(
+      (acc, product) => [...acc, ...(product.imageUrls || [])],
+      []
+    );
+    setImageUrls(allImageUrls);
   }, []);
 
-  const addProduct = (product) => {
-    const updatedProducts = [...products, product];
+  
+
+  const handleDeleteProduct = (productId) => {
+    // Filter out the product with the given productId
+    const updatedProducts = products.filter((product) => product.id !== productId);
+
+    // Update the products state and localStorage
     setProducts(updatedProducts);
-    
-    // Save updated products to localStorage
-    localStorage.setItem('products', JSON.stringify(updatedProducts));
+    localStorage.setItem("products", JSON.stringify(updatedProducts));
   };
-    const handleImageUpload = (urls) => {
-      setImageUrls(urls);
-    };
+
+
+  
+
+
+
+
+  
   return (
-    <div class="bg-gradient-to-r from-indigo-200 from-10% via-sky-200 via-30% to-emerald-200 to-90% ...">
+    <div class="bg-gradient-to-r from-gray-600 via-gray-200 to-gray-600 ...">
+      <div className="home">
+        <div className="home__container">
+          <Carousel />
 
-    <div className='home'>
-        <div className='home__container'>
+          <div className="home__row">
+            <Product
+              id={12343431}
+              title="Apprenticed to a Himalayan Master"
+              price={349}
+              image="https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg"
+              rating={5}
+            />
+            <Product
+              id={12343431}
+              title="Apprenticed to a Himalayan Master"
+              price={349}
+              image="https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg"
+              rating={2}
+            />
+            <Product
+              id={12343431}
+              title="Apprenticed to a Himalayan Master"
+              price={349}
+              image="https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg"
+              rating={4}
+            />
+            <Product
+              id={12343431}
+              title="Apprenticed to a Himalayan Master"
+              price={349}
+              image="https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg"
+              rating={4}
+            />
+          </div>
 
-            <img className='home__image'
-              src="https://i.ytimg.com/vi/-5QkMlkCt08/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBGVrRXfP-IfN2PQ1U-A_3USGTHeg"
-              alt="" />
-              <div  className='home__row'>
-              <Product 
-                id={12343431}
-                title='Apprenticed to a Himalayan Master'
-                price={349}
-                image='https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg'
-                rating={5}
-                />
-              <Product 
-                id={12343431}
-                title='Apprenticed to a Himalayan Master'
-                price={349}
-                image='https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg'
-                rating={2}
-                />
-              <Product 
-                id={12343431}
-                title='Apprenticed to a Himalayan Master'
-                price={349}
-                image='https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg'
-                rating={4}
-                />
-              <Product 
-                id={12343431}
-                title='Apprenticed to a Himalayan Master'
-                price={349}
-                image='https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg'
-                rating={4}
-                />
+          <div className="home__row">
+            <Product
+              id={12343431}
+              title="Apprenticed to a Himalayan Master"
+              price={349}
+              image="https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg"
+              rating={4}
+            />
+            <Product
+              id={12343431}
+              title="Apprenticed to a Himalayan Master"
+              price={349}
+              image="https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg"
+              rating={4}
+            />
+            <Product
+              id={12343431}
+              title="Apprenticed to a Himalayan Master"
+              price={349}
+              image="https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg"
+              rating={4}
+            />
+          </div>
+          <div className="home__row">
+            <Product
+              id={12343431}
+              title="Apprenticed to a Himalayan Master"
+              price={349}
+              image="https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg"
+              rating={4}
+            />
+          </div>
+          <div className="home__row">
 
-              </div>
+            <ProductsContainer
+              products={products}
+              imageUrls={imageUrls}
+              setProducts={setProducts}
+              onDeleteProduct={handleDeleteProduct}
 
-              <div className='home__row'>
-              <Product 
-                id={12343431}
-                title='Apprenticed to a Himalayan Master'
-                price={349}
-                image='https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg'
-                rating={4}
-                />
-              <Product 
-                id={12343431}
-                title='Apprenticed to a Himalayan Master'
-                price={349}
-                image='https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg'
-                rating={4}
-                />
-              <Product 
-                id={12343431}
-                title='Apprenticed to a Himalayan Master'
-                price={349}
-                image='https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg'
-                rating={4}
-                />
-              </div>
-              <div className='home__row'>
-              <Product 
-                id={12343431}
-                title='Apprenticed to a Himalayan Master'
-                price={349}
-                image='https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg'
-                rating={4}
-                />
-               
-
-              </div>
-              <div className="home__row">
-                <ProductsContainer products={products} imageUrls={imageUrls} />
-
-              </div>
-              </div>
-
-      
+            />
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-
-  )
+  );
 }
 
 export default Home;

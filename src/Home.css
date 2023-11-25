@@ -1,6 +1,10 @@
 .home {
-    display: flex;
-   justify-content: center;
+
+
+
+
+
+
    
 
 }
@@ -9,12 +13,5 @@
     z-index: 1;
     margin-left: 5px;
     margin-right: 5px;
-}
-
-.home__image{
-    height: 700px;
-    padding: 20px;
-    width: 100%;
-    margin-bottom: -20px;
 }
 

@@ -9,16 +9,21 @@ import Checkout from './Checkout';
 import Sell from './Sell';
 import Payment from './Payment';
 
+import {loadStripe} from '@stripe/stripe-js'
+import {Elements} from '@stripe/react-stripe-js'
+
 
 
 import React,{ useEffect } from "react";
 import { auth } from "./firebase";
-
-
-
-
-
 import Login from "./Login";
+
+
+const promise = loadStripe(
+  "pk_test_51MaNiLSERVek0tdZg0A7fe3SeCAnBy2fMa1hKx5q65SxewjC8BMWcmFYWKLEDdjKcyYFHVYFWy60Lnz5DoiCjQ5n006lsjwOM6"
+)
+
+
  function App() {
   //   const [{}, dispatch] = useStateValue();
   //   useEffect(() => {
@@ -56,7 +61,11 @@ import Login from "./Login";
        <Route path="/home" element={ [<Header/>,<Home/>]}/> 
        <Route path="/checkout" element={ [<Header/>,<Checkout/>]}/> 
        <Route path="/server" element={[<Header/>,<Sell/>] }/>
-       <Route path="/payment" element={[<Header/>,<Payment/>] }/>
+       <Route path="/payment" element={[
+       <Header/>,
+       <Elements stripe={promise}> 
+       <Payment/> 
+       </Elements>] }/>
 
 
        {/* <Sell setProducts={setProducts} />
