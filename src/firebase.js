@@ -31,4 +31,4 @@ export const storage = getStorage(app);
 const db = firebaseApp.firestore();
 const auth = getAuth(firebaseApp);
 
-export { db };
+export { db, auth };
