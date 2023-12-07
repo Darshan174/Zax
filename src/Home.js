@@ -51,30 +51,30 @@ function Home() {
           <div className="home__row">
             <Product
               id={12343431}
-              title="Apprenticed to a Himalayan Master"
-              price={349}
-              image="https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg"
-              rating={5}
-            />
-            <Product
-              id={12343431}
-              title="Apprenticed to a Himalayan Master"
-              price={349}
-              image="https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg"
-              rating={2}
-            />
-            <Product
-              id={12343431}
-              title="Apprenticed to a Himalayan Master"
-              price={349}
-              image="https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg"
+              title="Play Station 5"
+              price={499}
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNCy1pos1ugElPqT0xYOvSaqsQYJcs0ky_ModIPU7KM3wlvK7xnDzof2jQQArbN0aZB-c&usqp=CAU"
               rating={4}
             />
             <Product
               id={12343431}
-              title="Apprenticed to a Himalayan Master"
+              title="Iphone 15 pro max"
+              price={1599}
+              image="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-max-1.jpg"
+              rating={5}
+            />
+            <Product
+              id={12343431}
+              title="Sony WH-1000XM5"
               price={349}
-              image="https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg"
+              image="https://futureaudiophile.com/wp-content/uploads/2022/09/1.5-Sony-WH-1000XM5-White.jpg"
+              rating={4}
+            />
+            <Product
+              id={12343431}
+              title="Samsung S23"
+              price={400}
+              image="https://www.pointekonline.com/wp-content/uploads/2023/02/samsung-s23-img.png"
               rating={4}
             />
           </div>
@@ -82,33 +82,33 @@ function Home() {
           <div className="home__row">
             <Product
               id={12343431}
-              title="Apprenticed to a Himalayan Master"
-              price={349}
-              image="https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg"
-              rating={4}
+              title="Mechanical Keyboard"
+              price={129}
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIuyc6qJYfsXNm5ET2gFVj0SNHo4N1VngicQ&usqp=CAU"
+              rating={3}
             />
             <Product
               id={12343431}
-              title="Apprenticed to a Himalayan Master"
-              price={349}
-              image="https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg"
-              rating={4}
+              title="Airpods Pro"
+              price={299}
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXKWvH3xXkkQHRFxuYiyumBKrMO1NYkkUDBg&usqp=CAU"
+              rating={5}
             />
             <Product
               id={12343431}
-              title="Apprenticed to a Himalayan Master"
+              title="Macbook Pro"
               price={349}
-              image="https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg"
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLR2ARz7csEFxXzJCv88cdSbcmll5D2spurtVWp0Gw44F6QGfi7eQnEmaZRD4EWwX41ao&usqp=CAU"
               rating={4}
             />
           </div>
           <div className="home__row">
             <Product
               id={12343431}
-              title="Apprenticed to a Himalayan Master"
-              price={349}
-              image="https://satsang-foundation.org/wp-content/uploads/2022/06/Buy-Sri-Ms-Apprenticed-to-a-Himalayan-Master.jpg"
-              rating={4}
+              title="Samsung 4k TV"
+              price={499}
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQmHXS5-ORKPjR8gE5VOk0IhZZpI33jfTZFQ&usqp=CAU"
+              rating={3}
             />
           </div>
           <div className="home__row">

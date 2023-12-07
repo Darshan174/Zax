@@ -9,7 +9,7 @@ function Login() {
   const [password, setPassword] = useState("");
 
   const signIn = (e) => {
-    e.preventdefualt();
+    e.preventdefault();
     auth
       .signInWithEmailAndPassword(email, password)
       .then((auth) => {
@@ -19,9 +19,9 @@ function Login() {
   };
 
   const register = (e) => {
-    e.preventDefualt();
+    e.preventDefault();
     auth
-      .createUserWithEMailAndPassword(email, password)
+      .createUserWithEmailAndPassword(email, password)
       .then((auth) => {
         console.log(auth);
         if (auth) {
@@ -32,7 +32,7 @@ function Login() {
   };
 
   return (
-    <div class="bg-gradient-to-r from-gray-400 via-gray-100 to-gray-400 ...">
+    <div class="bg-gradient-to-r from-gray-600 via-gray-100 to-gray-600 ...">
       <div className="login">
         <Link to="/home">
           <img
@@ -71,7 +71,7 @@ function Login() {
           </form>
 
 
-          <button type="button" className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border
+          <button onClick={register} type="button" className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border
            border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700
             dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 w-full" onClick={register}>
             Create Zax account
